@@ -1,15 +1,10 @@
 "use client"
 import React from 'react'
-import { Button } from "@/components/ui/button"
-import { createClient, OAuthStrategy } from "@wix/sdk"
-import { members } from '@wix/members'
 import { useEffect, useState } from 'react'
-import Cookies from 'js-cookie'
 import { Users } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import MeetingTypeList from '@/components/ui/MeetingTypeList'
 import { Toaster } from '@/components/ui/toaster'
-import { toast, useToast } from '@/hooks/use-toast'
 
 /*
 async function LoginRequest() {
@@ -36,18 +31,8 @@ async function LoginRequest() {
 export default function Home() {
     // Define the state type as an array of MemberType or 
     const now = new Date()
-    const { toast } = useToast()
     const time = now.toLocaleTimeString('mm',{ hour: '2-digit', minute: '2-digit'});
-    function numToast() {
-        let numtoastTest =  0;
-        if(numtoastTest >= 10) {
-            toast({
-                title: "New noti Caught",
-               
-              })
-        }
-        return;
-    }
+    
     
     const date = (new Intl.DateTimeFormat('en-Us', {
         dateStyle: 'full'
