@@ -2,20 +2,198 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .flex-between {
+    @apply flex justify-between items-center;
   }
 }
+.cl-userButtonPopoverActionButtonIcon {
+  color: white;
+}
+.cl-logoBox {
+  height: 40px;
+}
+.cl-dividerLine {
+  background: #252a41;
+  height: 2px;
+}
+.cl-socialButtonsIconButton {
+  border: 3px slide #1e2757;
+  background-color: #161925;
+}
+.cl-formFieldInput {
+  color: #ecf0ff;
+  font-family: inter;
+  background-color: #252a41;
+}
+.cl-internal-1dauvpw {
+  display: none;
+}
+.cl-formButtonPrimary {
+  background-color: #252a41;
+  font-family: inter;
+}
+.cl-formButtonPrimary:hover {
+  background-color: #1c1f2e;
+}
+.cl-internal-11m7oop label {
+  color: white;
+  font-family: inter;
+}
+.cl-internal-16mc20d {
+  display: none;
+}
 
+.cl-internal-16mc20d {
+  display: none;
+}
+.cl-cardBox {
+  /*None*/
+}
+.cl-card {
+  background-color: #1c1f2e;
+  border-radius: 20px 20px 0px 0px;
+}
+.cl-header {
+  font-family: inter;
+  font: bold;
+}
+.cl-headerTitle {
+  color: white;
+}
+.cl-internal-wl6txu p {
+  font-family: inter;
+  font-size: 12px;
+}
+.cl-footerAction {
+  font-family: inter;
+}
+
+.cl-footer {
+  background-color: #202020;
+  border-radius: 0px 0px 20px 20px;
+}
+.cl-footerAction {
+  background-color: #202020;
+  width: 100%;
+  height: 100%;
+}
+
+.cl-footerAction span {
+  color: #c9ddff;
+}
+.cl-footerAction a {
+  color: #f5fcff;
+  transition: 0.4s color;
+}
+.cl-footerAction a:hover {
+  color: #0e78f9;
+  transition: 0.4s color;
+}
+.cl-userButtonPopoverCard,
+.cl-userButtonPopoverMain {
+  background: #252a41;
+  color: white;
+  font-family: inter;
+  box-shadow: #1e2757 0px 5px 25px 0px;
+}
+.cl-userButtonPopoverActions button {
+  color: white;
+}
+
+.cl-userButtonPopoverActions button:hover {
+  color: #c9ddff;
+}
+.cl-userButtonPopoverFooter {
+  display: none;
+}
+.cl-navbar, .cl-navbarMobileMenuRow ,
+.cl-internal-13lvar6,
+.cl-internal-13u79ez {
+  background-color: #252A41;
+  background: #252A41;
+  font-family: inter;
+  color: #f5fcff;
+}
+.cl-navbarMobileMenuRow  button{
+  color: #f5fcff;
+
+}
+.cl-navbarMobileMenuRow  button:hover{
+  color: #ECF0FF;
+
+}
+.cl-navbarButtons,  .cl-internal-1ud02r1 button{
+  color: #ECF0FF;
+
+}
+.cl-internal-1hp5nqm {
+  display: none;
+}
+.cl-internal-1mm78hd div h1 {
+  font-family: inter;
+  color: #f5fcff;
+}
+.cl-internal-1mm78hd div button {
+  color: #f5fcff;
+}
+.cl-scrollBox{
+    background-color:  #1C1F2E;
+    font-family: inter;
+}
+.cl-page {
+  color: #F5FCFF;
+}
+.cl-page p,span,button{
+  color: #ECF0FF;
+}
+.cl-profileSectionPrimaryButton  {
+  color:  #ECF0FF;
+}
+.cl-profileSectionPrimaryButton:hover{
+  color:  #830EF9;
+}
+.cl-badge {
+  color: #830EF9;
+  box-shadow: #830EF9 0px 0px 0px 1px, #830EF9 0px 2px 0px -1px;
+}
+.cl-internal-1q12xop, .cl-internal-xifi3x button{
+  background-color: #252A41;
+  color: #ECF0FF;
+}
+.cl-menuList,.cl-menuItem  {
+  background-color: #252A41;
+  border: none;
+}
+.cl-internal-1q12xop {
+  font-family: inter;
+}
+.str-video__speaker-layout__wrapper {
+  
+  margin-bottom: 25px;
+}
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  
+}
+.glasswmorphism2 {
+  background: rgba(18, 17, 17, 0.25);
+  backdrop-filter: blur(8px);
+  
+}
+.cl-profileSectionContent, .cl-internal-1e217up {
+  background-color: #1C1F2E;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  max-height: 100vh;
 }
