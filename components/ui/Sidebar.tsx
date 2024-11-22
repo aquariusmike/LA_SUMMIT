@@ -1,11 +1,11 @@
 'use client'
 import React from 'react'
 import { sidebarLinks } from '@/tsconstants'
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import Image from 'next/image'
-import { UserRound } from 'lucide-react';
+
 
 const Sidebar = () => {
   const pathname = usePathname();
